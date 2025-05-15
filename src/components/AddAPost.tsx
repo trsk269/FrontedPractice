@@ -20,7 +20,7 @@ export default function AddAPost() {
     e.preventDefault();
 
     try {
-      const res = await axios.post("http://localhost:5001/api/posts/add", formData);
+      const res = await axios.post("https://my-backend-production.up.railway.app/api/posts/add", formData);
       
       if (res.status === 201) {
         alert("Form submitted successfully!");
